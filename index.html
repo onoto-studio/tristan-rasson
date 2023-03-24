@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - chute 2122</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Brutalist Style Menu</title>
+   <!-- stylesheet -->
+   <link rel="stylesheet" href="stylesheet.css">
+   <!-- google fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/vax2vdq.css">
+  <link rel="stylesheet" href="https://use.typekit.net/vax2vdq.css">
+  <link rel="stylesheet" href="https://use.typekit.net/vax2vdq.css">
+   <!-- jquery + tweenmax cdns -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+<body>
+   <div class="wrapper">
+      <div class="menu-btn">chute 2122<br><span class="mot-important">une exposition de tristán rasson</span></div>
+      <div class="menu-container">
+         <div class="project-section">
+            <ul>
+               <li id="fumée">
+                 <span>la fumée fait vivre les pigeons</span></li>
+  <li id="botasolar"><span>botasolar</span></li>
+               <li id="flawed"><span>flawed</span></li>
+               <li id="murmures"><span>murmures</span></li>
+               <li id="luz"><span>luz</span></li>
+              <li id="crane"><span>le crâne</span></li>
+               <li id="medusa"><span>médusa</span></li>
+               <li id="chute"><span>la chute</span></li>
+               <li id="souriez"><span>souriez</span></li>
+               <li id="tunnel"><span>le tunnel de la mort</span></li>
+              <li id="bienvenue"><span>bienvenue en 2122</span></li>
+               <li id="moche"><span>il fait moche</span></li>
+               <li id="proprio"><span>changement de propriétaire</span></li>
+               <li id="vapeur"><span>vapeur</span></li>
+            </ul>
+           <div id="lightbox">
+  <img src="" alt="" />
+</div>
+         </div>
+        <div class="presentation-section">
+            <div class="txt">
+               <p><a>06.05.23—10.06.23<br><span class="custom-font">Arkose</span></p> <p><a>all. verte 52, 1000 bruxelles</a></p>
+           </div>
+         </div>
+         <div class="mail-section">
+            <div class="txt">
+               <p><a>Toutes les tirages d'art sont limitées au nombre de 10 et numérotées.<br>
+                 240€ pour les 40x40cm encadrées<br>
+                 260€ pour les 40x60cm encadrées<br>Toutes les réservations se font par email.</a></p>
+            </div>
+         </div>
+         <div class="social-section">
+            <div class="txt">
+               <p><a href="https://www.instagram.com/tristanrasson/" target="_blank" style="color:black;">Instagram</a></p>
+              <p><a href="mailto:tristan@vacances-en-belgique.be"style="color:black;">e-mail</a></p>
+            </div>
+         </div>
+      </div>
+   </div>
+  <script>$(document).ready(function() {
+  $("#crosshair-btn").click(function() {
+    $("html").css("cursor", "crosshair");
+  });
+});
+</script>
+   <script>
+      var t1 = new TimelineMax({paused: true});
+      t1.from(".menu-container", 1, {
+         left: "-25%",
+         ease: Power3.easeInOut
+      });
+
+      t1.reverse();
+         $(document).on("click", ".menu-btn", function() {
+         t1.reversed(!t1.reversed());
+      });
+   </script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
