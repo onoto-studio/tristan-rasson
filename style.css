@@ -1,0 +1,167 @@
+html,
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Afronaut";
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+li, a {
+   list-style: none;
+   text-decoration: none;
+}
+
+.wrapper {
+   width: 100%;
+   height: 100vh;
+   background: #FF0000 ;
+  
+}
+
+.menu-btn {
+   position: fixed;
+   top: 0;
+   right: 0;
+   font-size: 4em;
+  color:black;
+   padding: 0.2em;
+   text-transform: lowercase;
+   cursor: crosshair;
+    z-index: 999;
+  line-height: 0.7;
+
+
+
+}
+
+.menu-container {
+   position: fixed;
+   width: 25%;
+   height: 100vh;
+   border-right: 1px solid #000;
+}
+
+ul {
+   margin-left: 1.0em;
+}
+
+.project-section {
+   height: 65%;
+   border-bottom: 1px solid #000;
+   display: flex;
+   align-items: center;
+}
+
+.project-section h1 {
+   position: fixed;
+   top: 0;
+   left: 0;
+   font-size: 3.6em;
+   padding: 0.5em;
+   text-transform: lowercase;
+   cursor: crosshair;
+}
+
+.project-section ul > li {
+   margin-left: 1em;
+   font-family: "Afronaut";
+   font-size: 1.2em;
+   font-weight: lighter;
+   line-height: 2;
+   cursor: crosshair;
+}
+
+.project-section ul > li span:hover {
+   font-style: italic;color:white;
+}
+
+.mail-section {
+   height: 14%;
+   border-bottom: 1px solid #000;
+   display: flex;
+   align-items: center;
+}
+
+.txt {
+   margin-left: 2.3em;
+   cursor: crosshair;
+}
+
+.txt p {
+   font-size: 0.6em;
+}
+
+.mail-section .txt p:hover {
+   font-style: italic;
+}
+
+.presentation-section {
+   height: 14%;
+   border-bottom: 1px solid #000;
+   display: flex;
+   align-items: center;
+}
+
+.txt {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+font-weight: 400;
+font-style: normal;
+   margin-left: 2.3em;
+   cursor: crosshair;
+}
+
+.txt p {
+  
+   font-size: 0.6em;
+}
+
+
+.social-section {
+   height: 7%;
+   display: flex;
+   align-items: center;
+}
+
+.social-section .txt p {
+   font-size: 0.6em;
+}
+
+.social-section .txt p span:hover {
+   font-style: italic;
+}
+
+html {
+   cursor: crosshair;
+}
+
+#lightbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+}
+
+#lightbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.custom-font {
+font-family: "altesse-std-24pt", sans-serif;
+     font-size: 2.6em;
+font-weight: 400;
+font-style: normal;
+}
+
+.mot-important {
+    font-size: 24px;
+}
