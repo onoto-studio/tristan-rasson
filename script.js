@@ -23,7 +23,7 @@ gsap.from('[animate] .word', {
   duration: 1,
   ease: 'power1.out',
   stagger: 0.1,
-  
+
   scrollTrigger: {
     trigger: '[animate]',
     start: 'top center',
