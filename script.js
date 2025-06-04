@@ -1,4 +1,4 @@
- // use a script tag or an external JS file
+ // use a script tag or an external JS fileMore actions
  document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(Draggable,ScrambleTextPlugin,ScrollTrigger,ScrollSmoother,ScrollToPlugin,SplitText,TextPlugin,SlowMo,CustomEase)
   // gsap code here!
@@ -13,17 +13,20 @@ let smoother = ScrollSmoother.create({
   normalizeScroll: true
 });
 
- gsap.registerPlugin(SplitText);Add commentMore actions
+let typeSplit = new SplitType('[animate]', {
+  types: 'lines, words, chars',
+  tagName: 'span'
+})
 
-document.fonts.ready.then(() => {
-  gsap.set(".container", { opacity: 1 });
-  let split = SplitText.create(".animate-me", { type: "words", aria: "hidden" });
+gsap.from('[animate] .word', {
+  opacity: 0.3,
+  duration: 1,
+  ease: 'power1.out',
+  stagger: 0.1,
 
-  gsap.from(split.words, {
-    opacity: 0,
-    duration: 2,
-    ease: "sine.out",
-    stagger: 0.1,
-  });
-});
-
+  scrollTrigger: {
+    trigger: '[animate]',
+    start: 'top center',
+    scrub: true
+  }
+})
