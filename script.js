@@ -13,21 +13,17 @@ let smoother = ScrollSmoother.create({
   normalizeScroll: true
 });
 
-let typeSplit = new SplitType('[animate]', {
-  types: 'lines, words, chars',
-  tagName: 'span'
-})
+ gsap.registerPlugin(SplitText);Add commentMore actions
 
-gsap.from('[animate] .word', {
-  opacity: 0.3,
-  duration: 1.25,
-  ease: 'Second.out',
-  stagger: 0.15,
-  
-  scrollTrigger: {
-    trigger: '[animate]',
-    start: 'top center',
-    scrub: true
-  }
-})
+document.fonts.ready.then(() => {
+  gsap.set(".container", { opacity: 1 });
+  let split = SplitText.create(".animate-me", { type: "words", aria: "hidden" });
+
+  gsap.from(split.words, {
+    opacity: 0,
+    duration: 2,
+    ease: "sine.out",
+    stagger: 0.1,
+  });
+});
 
