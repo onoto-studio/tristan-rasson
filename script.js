@@ -20,9 +20,9 @@ let typeSplit = new SplitType('[animate]', {
 
 gsap.from('[animate] .word', {
   opacity: 0.3,
-  duration: 1,
-  ease: 'power1.out',
-  stagger: 0.1,
+  duration: 1.25,
+  ease: 'Second.out',
+  stagger: 0.15,
   
   scrollTrigger: {
     trigger: '[animate]',
@@ -30,3 +30,4 @@ gsap.from('[animate] .word', {
     scrub: true
   }
 })
+
