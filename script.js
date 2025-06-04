@@ -1,4 +1,4 @@
- // use a script tag or an external JS fileMore actions
+ // use a script tag or an external JS file
  document.addEventListener("DOMContentLoaded", (event) => {
   gsap.registerPlugin(Draggable,ScrambleTextPlugin,ScrollTrigger,ScrollSmoother,ScrollToPlugin,SplitText,TextPlugin,SlowMo,CustomEase)
   // gsap code here!
@@ -23,7 +23,7 @@ gsap.from('[animate] .word', {
   duration: 1,
   ease: 'power1.out',
   stagger: 0.1,
-
+  
   scrollTrigger: {
     trigger: '[animate]',
     start: 'top center',
