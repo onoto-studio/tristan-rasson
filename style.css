@@ -13,6 +13,7 @@ p {
   display: flex;
   justify-content: center;   /* centrer horizontalement */
   align-items: center;
+  height: 100vh;
 }
 
 .whiteBD {
@@ -22,4 +23,5 @@ p {
   display: flex;
   justify-content: center;   /* centrer horizontalement */
   align-items: center;
+  height: 100vh;
 }
