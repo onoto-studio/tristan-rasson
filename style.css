@@ -1,27 +1,293 @@
-p {
-  font-family: "ivypresto-display", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 36px;
-  text-align: center;
-}
-
-.blackBD {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
   background-color: black;
   color: white;
-  width: 100%;
-  display: flex;
-  justify-content: center;   /* centrer horizontalement */
-  align-items: center;
-  height: 100vh;
+  cursor: url('chemin/vers/mon-curseur.png') 20 20, crosshair;
 }
 
-.whiteBD {
-  background-color: white;
-  color: black;
-  width: 100%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
   display: flex;
-  justify-content: center;   /* centrer horizontalement */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  list-style: none;
+}
+
+li {
+  height: 30px;
+  margin: 0 10px;
+}
+
+a,
+.stile,
+.stile2,
+.padding-a {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  color: white;
+  text-decoration: none;
+  cursor: ne-resize;
+}
+
+a:hover,
+b:hover,
+.custom-font:hover {
+  color: red;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 33%;
+  padding: 0 25px;
+}
+
+.column img {
+  margin-top: 25px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ff0000;
+  font-family: 'Afronaut';
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.container,
+.container2,
+.container3,
+.custom-font,
+.custom-font2 {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 0 50px;
+  font-size: 72px;
+  font-family: "Afronaut";
+}
+
+.container2 {
+  padding: 0 50px;
+  font-size: 36px;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+}
+
+.container3 {
+  width: 30%;
+  padding: 10px 50px;
+  font-size: 24px;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  border: 1px solid gray;
+  text-align: center;
+  color: white;
+}
+
+.custom-font {
+  padding: 0 20px;
+  font-size: 72px;
+  font-family: "altesse-std-24pt", sans-serif;
+  cursor: ne-resize;
+  text-decoration: none;
+  color: white;
+}
+
+.custom-font2 {
+  font-size: 144px;
+  font-family: "Afronaut";
+}
+
+.column figcaption,
+.custom-font69 {
+  font-family: "Afronaut";
+  text-align: center;
+  color: white;
+}
+
+.column figcaption {
+  font-size: 18px;
+}
+
+.custom-font69 {
+  font-size: 12px;
+}
+
+/* Responsive breakpoints */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+  .container {
+  width: 100% !important;
+  padding: 10px;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .container {
+  width: 100% !important;
+  padding: 10px;
+  }
+  
+  .stile2,
+  .custom-font,
+  .sr-only,
+  .animate-me {
+  font-size: 12px !important;
+    line-height: 12px !important;
+}
+  .custom-font2 {
+    font-size: 50px;
+    line-height: 50px !important;
+
+}
+}
+
+/* Responsive styles < 768px */
+@media (max-width: 767px) {
+  html,
+  .custom-font2 {
+    font-size: 100px;
+    text-align: center;
+    font-family: "Afronaut";
+  }
+
+  .stile2, 
+  .custom-font,
+  .sr-only,
+  .animate-me {
+  font-size: 20px !important;
+ line-height: 20px !important;
+}
+
+  .custom-font2 {
+    font-size: 50px;
+    line-height: 50px !important;
+
+}
+
+  footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    height: 20px;
+    margin: 5px;
+  }
+
+  a,
+  .padding-a {
+    font-size: 10px;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  .padding-a {
+    margin: 20px;
+  }
+
+  .container2 {
+    padding: 0 20px;
+    font-size: 24px;
+  }
+
+  .container3 {
+    padding: 0 20px;
+    border: 0;
+  }
+
+  .custom-font {
+    font-size: 48px;
+  }
+
+  .stile {
+    font-size: 24px;
+  }
+
+  .column figcaption {
+    font-size: 12px;
+  }
+
+  .custom-font69 {
+    font-size: 8px;
+  }
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+.container {
+  width: 90vw;
   height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 9px;
+  opacity: 0;
+}
+.animate-me {
+  font-size: 48px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  perspective: 500px;
 }
